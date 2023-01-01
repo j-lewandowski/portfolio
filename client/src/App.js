@@ -1,13 +1,13 @@
 import Navbar from "./components/navbar/Navbar";
-
-import stronaGlowna from "./pages/stronaGlowna/stronaGlowna";
-import mojeProjekty from "./pages/mojeProjekty/mojeProjekty";
-import umiejetnosci from "./pages/umiejetnosci/umiejetnosci";
+import Main from "./components/sections/main/Main";
 
 function App() {
     return (
-        <div className="min-w-screen min-h-screen bg-slate-800">
+        <div className="flex flex-col h-screen">
             <Navbar />
+            <div className="h-screen">
+                <Main />
+            </div>
         </div>
     );
 }

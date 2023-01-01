@@ -2,7 +2,16 @@
 module.exports = {
     content: ["./src/**/*.{html,js,jsx}"],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                oxygen: ["Oxygen", "sans-serif"],
+                IBM: ["IBM Plex Mono", "sans-serif"],
+            },
+            colors: {
+                primary: "#272B31",
+                accent: "#5CF486",
+            },
+        },
     },
     plugins: [],
 };
