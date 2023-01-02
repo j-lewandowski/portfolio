@@ -5,7 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 
 function Scene() {
     return (
-        <Canvas className="h-full w-full">
+        <Canvas className="h-2 w-2 md:h-full md:w-full">
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={0.5} />
             <directionalLight position={[-2, 5, 2]} intensity={1} />

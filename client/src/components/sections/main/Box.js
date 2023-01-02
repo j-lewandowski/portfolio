@@ -1,10 +1,10 @@
-import React from "react";
-
+import Plate from "./Plate";
 function Box() {
     return (
-        <mesh rotation={[90, 0, 20]}>
-            <boxBufferGeometry attach="geometry" args={[3, 3, 3]} />
+        <mesh>
+            <boxBufferGeometry attach="geometry" args={[1.5, 1.5, 1.5]} />
             <meshLambertMaterial attach="material" color="white" />
+            <Plate position={[[3, 2, 2]]} rotation-x={0.1} />
         </mesh>
     );
 }
