@@ -1,4 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
+import AboutMe from "./components/sections/aboutMe/AboutMe";
 import Main from "./components/sections/main/Main";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
             <Navbar />
             <div className="h-screen">
                 <Main />
+                <AboutMe />
             </div>
         </div>
     );
