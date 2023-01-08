@@ -6,7 +6,7 @@ function TechItem({ icon, name }) {
             <img
                 src={icon}
                 alt="Technology icon"
-                className="h-16 w-16 z-0 grayscale group-hover:grayscale-0 duration-150 ease-in-out"
+                className="h-16 w-16 grayscale group-hover:grayscale-0 duration-150 ease-in-out"
             />
             <p className="font-IBM invisible group-hover:visible text-accent duration-150 ease-in-out">
                 {name}

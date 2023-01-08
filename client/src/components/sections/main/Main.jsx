@@ -3,9 +3,7 @@ import Scene from "./Scene";
 function Main() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-            <div id="anim">
-                <Scene />
-            </div>
+            <div id="anim"></div>
             <div className="text-white font-oxygen text-base md:text-2xl flex flex-col font-bold justify-center items-center">
                 <div>
                     <p>
