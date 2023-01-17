@@ -4,17 +4,29 @@ import Main from "./components/sections/main/Main";
 import MyProjects from "./components/sections/myProjects/MyProjects";
 import Contact from "./components/sections/contact/Contact";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
     return (
-        <div className="flex flex-col h-screen">
-            <Navbar />
-            <div className="h-screen">
-                <Main />
-                <AboutMe />
-                <MyProjects />
-                <Contact />
+        <BrowserRouter>
+            <div className="flex flex-col h-screen">
+                <Navbar />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <div className="h-screen">
+                                <Main />
+                                <AboutMe />
+                                <MyProjects />
+                                <Contact />
+                            </div>
+                        }
+                    />
+                    <Route path="/my-projects" element={<div>Projekty</div>} />
+                </Routes>
             </div>
-        </div>
+        </BrowserRouter>
     );
 }
 

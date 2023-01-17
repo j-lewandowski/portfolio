@@ -42,16 +42,21 @@ function AboutMe() {
 
     return (
         <div className="h-screen w-full grid grid-cols-1 md:grid-cols-2 font-oxygen text-white">
-            <div className="w-full p-8">
+            <div className="w-full p-8 items-center justify-center space-y-12">
                 <p className="text-2xl font-bold">O mnie</p>
                 <p className="text-xl">
-                    Cześć! Nazywam się Jakub Lewandowski i zajmuję się full
-                    stack developmentem.
+                    Cześć! Nazywam się Jakub Lewandowski i jestem studentem II
+                    roku informatyki na Collegium Da Vinci w Poznaniu, który
+                    pasjonuje się full stack developmentem. Tworzeniem aplikacji
+                    internetowych zainteresowałem się kilka lat temu, kiedy
+                    tworzyłem swoją pierwszą prostą aplikację. Od tego czasu
+                    zdążyłem popracować nad kilkoma poważniejszymi aplikacjami z
+                    wykorzystaniem różnych technologii.
                 </p>
             </div>
             <div className="w-full">
                 <p className="text-2xl font-bold font-IBM">Technologie</p>
-                <div className="grid grid-cols-3 grid-rows-3 gap-4 m-8 ml-0">
+                <div className="grid grid-cols-3 grid-rows-3 gap-4 w-auto h-auto m-8 ml-0">
                     {technologies.map((technology, i) => {
                         return (
                             <div className="flex items-center justify-center">

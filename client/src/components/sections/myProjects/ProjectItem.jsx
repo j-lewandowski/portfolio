@@ -1,6 +1,6 @@
-function ProjectItem({ name, desc, stack }) {
+function ProjectItem({ name, desc, stack, img }) {
     return (
-        <div className="flex items-center justify-around flex-col relative">
+        <div className="flex items-center justify-around flex-col relative -translate-x-[10%]">
             <div className="w-96 h-64 bg-[#16191c] relative -z-10">
                 <div className="p-4 pr-32 space-y-4">
                     <p className="font-IBM">{name}</p>
@@ -11,7 +11,11 @@ function ProjectItem({ name, desc, stack }) {
                         return <p key={i}>{item}</p>;
                     })}
                 </div>
-                <div className="w-96 h-64 absolute z-10 bg-accent -top-28 left-48" />
+                <div
+                    className={
+                        "w-96 h-64 absolute z-10 bg-prestika -top-28 left-48 bg-no-repeat bg-cover bg-center outline-2 outline-accent"
+                    }
+                />
             </div>
         </div>
     );

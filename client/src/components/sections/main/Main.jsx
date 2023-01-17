@@ -1,9 +1,12 @@
 import Scene from "./Scene";
+import Hero from "../../../img/hero.svg";
 
 function Main() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-            <div id="anim"></div>
+            <div id="anim" className="flex justify-center items-center">
+                <img src={Hero} />
+            </div>
             <div className="text-white font-oxygen text-base md:text-2xl flex flex-col font-bold justify-center items-center">
                 <div>
                     <p>

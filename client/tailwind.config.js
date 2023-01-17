@@ -11,6 +11,9 @@ module.exports = {
                 primary: "#272B31",
                 accent: "#5CF486",
             },
+            backgroundImage: {
+                prestika: 'url("/src/img/prestika.png")',
+            },
         },
     },
     plugins: [],

@@ -6,11 +6,13 @@ function MyProjects() {
             name: "Prestika",
             desc: "Strona internetowa na zamówienie",
             stack: ["React", "Tailwind CSS", "Sanity CMS"],
+            img: "../../../img/prestika.png",
         },
         {
             name: "Helpdesk app",
             desc: "Aplikacja helpdesk",
             stack: ["React", "Bootstrap", "Firebase"],
+            img: "../../../img/prestika.png",
         },
         // {
         //     name: "House marketplace app",
@@ -31,6 +33,7 @@ function MyProjects() {
                             name={project.name}
                             desc={project.desc}
                             stack={project.stack}
+                            img={project.img}
                             id={i}
                         />
                     );
