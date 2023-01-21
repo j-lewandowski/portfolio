@@ -1,9 +1,7 @@
-import Scene from "./Scene";
 import Hero from "../../../img/hero.svg";
-
 function Main() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-full" id="hero">
             <div id="anim" className="flex justify-center items-center">
                 <img src={Hero} />
             </div>

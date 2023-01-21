@@ -23,7 +23,10 @@ function Contact() {
     };
 
     return (
-        <div className="h-screen w-full flex flex-col justify-center items-center font-oxygen text-white relative">
+        <div
+            className="h-screen w-full flex flex-col justify-center items-center font-oxygen text-white relative"
+            id="contact"
+        >
             <p className="font-IBM text-3xl font-bold mb-8">Napisz do mnie</p>
             {/* {formIsOpen && (
                 <div className="flex flex-col gap-4 w-96 font-IBM">
@@ -54,12 +57,12 @@ function Contact() {
             <div className="absolute bottom-2 text-sm text-gray-400 font-IBM">
                 <p>Designed & created by Jakub Lewandowski</p>
             </div>
-            {calculatorIsOpen && (
+            {/* {calculatorIsOpen && (
                 <Calculator
                     isOpen={calculatorIsOpen}
                     setIsOpen={setCalculatorIsOpen}
                 />
-            )}
+            )} */}
         </div>
     );
 }

@@ -1,27 +1,14 @@
 import ProjectItem from "./ProjectItem";
+import { useNavigate } from "react-router-dom";
 
-function MyProjects() {
-    const projects = [
-        {
-            name: "Prestika",
-            desc: "Strona internetowa na zamówienie",
-            stack: ["React", "Tailwind CSS", "Sanity CMS"],
-            img: "../../../img/prestika.png",
-        },
-        {
-            name: "Helpdesk app",
-            desc: "Aplikacja helpdesk",
-            stack: ["React", "Bootstrap", "Firebase"],
-            img: "../../../img/prestika.png",
-        },
-        // {
-        //     name: "House marketplace app",
-        //     desc: "Aplikacja do wystawiania nieruchomości",
-        // },
-    ];
+function MyProjects({ projects }) {
+    const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen w-full flex flex-col justify-around items-center text-white font-oxygen">
+        <div
+            className="min-h-screen w-full flex flex-col justify-around items-center text-white font-oxygen"
+            id="my-projects"
+        >
             <p className="text-3xl font-IBM">
                 Kilka projektów, nad którymi pracowałem
             </p>
@@ -39,9 +26,12 @@ function MyProjects() {
                     );
                 })}
             </div>
-            <button className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent">
-                {" "}
-                Więcej projektów{" "}
+
+            <button
+                className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent"
+                onClick={() => navigate("/my-projects")}
+            >
+                Więcej projektów
             </button>
         </div>
     );

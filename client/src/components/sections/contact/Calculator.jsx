@@ -1,6 +1,4 @@
 function Calculator({ setIsOpen, isOpen }) {
-    const data = [];
-
     const onExit = (e) => {
         e.preventDefault();
         setIsOpen(!isOpen);

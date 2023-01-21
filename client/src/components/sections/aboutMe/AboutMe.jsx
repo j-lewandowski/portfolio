@@ -41,7 +41,10 @@ function AboutMe() {
     ];
 
     return (
-        <div className="h-screen w-full grid grid-cols-1 md:grid-cols-2 font-oxygen text-white">
+        <div
+            className="h-screen w-full grid grid-cols-1 md:grid-cols-2 font-oxygen text-white"
+            id="about-me"
+        >
             <div className="w-full p-8 items-center justify-center space-y-12">
                 <p className="text-2xl font-bold">O mnie</p>
                 <p className="text-xl">

@@ -1,12 +1,30 @@
-import Navbar from "./components/navbar/Navbar";
-import AboutMe from "./components/sections/aboutMe/AboutMe";
-import Main from "./components/sections/main/Main";
-import MyProjects from "./components/sections/myProjects/MyProjects";
-import Contact from "./components/sections/contact/Contact";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Navbar from "./components/navbar/Navbar";
+import MainPage from "./pages/MainPage";
+import MyProjectsPage from "./pages/MyProjectsPage";
+import ProjectPage from "./pages/ProjectPage";
+
 function App() {
+    const projects = [
+        {
+            name: "Prestika",
+            desc: "Strona internetowa na zamówienie",
+            stack: ["React", "Tailwind CSS", "Sanity CMS"],
+            img: "../../../img/prestika.png",
+        },
+        {
+            name: "Helpdesk app",
+            desc: "Aplikacja helpdesk",
+            stack: ["React", "Bootstrap", "Firebase"],
+            img: "../../../img/prestika.png",
+        },
+        // {
+        //     name: "House marketplace app",
+        //     desc: "Aplikacja do wystawiania nieruchomości",
+        // },
+    ];
+
     return (
         <BrowserRouter>
             <div className="flex flex-col h-screen">
@@ -14,16 +32,16 @@ function App() {
                 <Routes>
                     <Route
                         path="/"
-                        element={
-                            <div className="h-screen">
-                                <Main />
-                                <AboutMe />
-                                <MyProjects />
-                                <Contact />
-                            </div>
-                        }
+                        element={<MainPage projects={projects} />}
                     />
-                    <Route path="/my-projects" element={<div>Projekty</div>} />
+                    <Route
+                        path="/my-projects"
+                        element={<MyProjectsPage projects={projects} />}
+                    />
+                    <Route
+                        path="/my-projects/:id"
+                        element={<ProjectPage projects={projects} />}
+                    />
                 </Routes>
             </div>
         </BrowserRouter>
