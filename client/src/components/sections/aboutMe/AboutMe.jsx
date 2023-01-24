@@ -59,9 +59,9 @@ function AboutMe() {
                     </a>{" "}
                     w Poznaniu, który pasjonuje się Full Stack Developmentem.
                     Tworzeniem aplikacji internetowych zainteresowałem się kilka
-                    lat temu, kiedy tworzyłem swoją pierwszą prostą aplikację.
-                    Od tego czasu zdążyłem popracować nad kilkoma poważniejszymi
-                    projektami z wykorzystaniem różnych technologii.
+                    lat temu. Od tego czasu zdążyłem popracować nad kilkoma
+                    poważniejszymi projektami z wykorzystaniem różnych
+                    technologii.
                 </p>
             </div>
             <div className="w-full p-4 md:pd-0">

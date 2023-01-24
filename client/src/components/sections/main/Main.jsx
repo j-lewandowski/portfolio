@@ -2,7 +2,7 @@ import Hero from "../../../img/hero.svg";
 function Main() {
     return (
         <div
-            className="flex flex-col items-center space-y-8 tracking-wide justify-center md:grid md:grid-cols-2 h-screen w-screen p-8 md:p-0"
+            className="flex flex-col items-center space-y-8 tracking-wide justify-center md:grid md:grid-cols-2 mt-32 md:mt-0 h-auto md:h-screen w-screen p-8 md:p-0"
             id="hero"
         >
             <div id="anim" className=" justify-center items-center flex">
