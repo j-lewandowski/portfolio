@@ -8,12 +8,14 @@ import ProjectPage from "./pages/ProjectPage";
 function App() {
     const projects = [
         {
+            id: 1,
             name: "Prestika",
             desc: "Strona internetowa na zamówienie",
             stack: ["React", "Tailwind CSS", "Sanity CMS"],
             img: "../../../img/prestika.png",
         },
         {
+            id: 2,
             name: "Helpdesk app",
             desc: "Aplikacja helpdesk",
             stack: ["React", "Bootstrap", "Firebase"],
@@ -27,7 +29,7 @@ function App() {
 
     return (
         <BrowserRouter>
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col h-screen w-screen">
                 <Navbar />
                 <Routes>
                     <Route

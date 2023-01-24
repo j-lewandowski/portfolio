@@ -5,7 +5,7 @@ import Contact from "../components/sections/contact/Contact";
 
 function MainPage({ projects }) {
     return (
-        <div className="h-screen">
+        <div className="w-screen flex flex-col items-center justify-center">
             <Main />
             <AboutMe />
             <MyProjects id="my-projects" projects={projects} />

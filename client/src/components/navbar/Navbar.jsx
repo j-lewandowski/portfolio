@@ -10,8 +10,8 @@ function Navbar() {
     };
 
     return (
-        <div className="w-full fixed bg-primary z-10 shadow-lg">
-            <div className="flex justify-between items-center px-8 pt-4 pb-3 text-white font-oxygen duration-150">
+        <nav className="w-full fixed bg-primary z-10 shadow-lg">
+            <div className="container flex justify-between items-center px-8 pt-4 pb-3 text-white font-oxygen duration-150">
                 <a href="#hero">
                     <img
                         src={Logo}
@@ -43,7 +43,7 @@ function Navbar() {
                     </a>
                 </ul>
             </div>
-        </div>
+        </nav>
     );
 }
 

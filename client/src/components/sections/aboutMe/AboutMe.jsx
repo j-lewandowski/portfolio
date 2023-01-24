@@ -1,3 +1,4 @@
+import { startTransition } from "react";
 import TechItem from "./TechItem";
 
 function AboutMe() {
@@ -42,34 +43,42 @@ function AboutMe() {
 
     return (
         <div
-            className="h-screen w-full grid grid-cols-1 md:grid-cols-2 font-oxygen text-white"
+            className="h-screen w-screen flex flex-col justify-center items-center md:grid md:grid-cols-2 font-oxygen text-white"
             id="about-me"
         >
-            <div className="w-full p-8 items-center justify-center space-y-12">
-                <p className="text-2xl font-bold">O mnie</p>
-                <p className="text-xl">
+            <div className="w-full p-8 px-16 items-center justify-center space-y-12 text-center">
+                <p className="text-xl md:text-2xl font-bold">O mnie</p>
+                <p className=" md:text-xl text-justify">
                     Cześć! Nazywam się Jakub Lewandowski i jestem studentem II
-                    roku informatyki na Collegium Da Vinci w Poznaniu, który
-                    pasjonuje się full stack developmentem. Tworzeniem aplikacji
-                    internetowych zainteresowałem się kilka lat temu, kiedy
-                    tworzyłem swoją pierwszą prostą aplikację. Od tego czasu
-                    zdążyłem popracować nad kilkoma poważniejszymi aplikacjami z
-                    wykorzystaniem różnych technologii.
+                    roku informatyki na{" "}
+                    <a
+                        className="text-accent hover:underline"
+                        href="https://cdv.pl/"
+                    >
+                        Collegium Da Vinci
+                    </a>{" "}
+                    w Poznaniu, który pasjonuje się Full Stack Developmentem.
+                    Tworzeniem aplikacji internetowych zainteresowałem się kilka
+                    lat temu, kiedy tworzyłem swoją pierwszą prostą aplikację.
+                    Od tego czasu zdążyłem popracować nad kilkoma poważniejszymi
+                    projektami z wykorzystaniem różnych technologii.
                 </p>
             </div>
-            <div className="w-full">
+            <div className="w-full p-4 md:pd-0">
                 <p className="text-2xl font-bold font-IBM">Technologie</p>
-                <div className="grid grid-cols-3 grid-rows-3 gap-4 w-auto h-auto m-8 ml-0">
-                    {technologies.map((technology, i) => {
-                        return (
-                            <div className="flex items-center justify-center">
-                                <TechItem
-                                    icon={technology.icon}
-                                    name={technology.name}
-                                />
-                            </div>
-                        );
-                    })}
+                <div className="w-full flex items-center justify-center">
+                    <div className="grid grid-cols-3 grid-rows-3 gap-4 h-auto py-4 w-fit">
+                        {technologies.map((technology, i) => {
+                            return (
+                                <div className="flex items-center justify-center">
+                                    <TechItem
+                                        icon={technology.icon}
+                                        name={technology.name}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

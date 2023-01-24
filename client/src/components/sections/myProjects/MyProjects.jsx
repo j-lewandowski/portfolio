@@ -6,13 +6,13 @@ function MyProjects({ projects }) {
 
     return (
         <div
-            className="min-h-screen w-full flex flex-col justify-around items-center text-white font-oxygen"
+            className="py-16 min-h-screen w-full flex flex-col space-y-8 justify-around items-center text-white font-oxygen"
             id="my-projects"
         >
-            <p className="text-3xl font-IBM">
+            <p className="text-xl text-center md:text-3xl font-IBM">
                 Kilka projektów, nad którymi pracowałem
             </p>
-            <div className="grid grid-cols-2 w-full">
+            <div className="flex flex-col justify-around items-center px-4 space-y-8 md:space-y-0 md:grid md:grid-cols-2 w-full">
                 {projects.map((project, i) => {
                     return (
                         <ProjectItem
