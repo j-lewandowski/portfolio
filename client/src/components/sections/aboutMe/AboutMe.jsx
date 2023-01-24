@@ -42,7 +42,7 @@ function AboutMe() {
 
     return (
         <div
-            className="h-screen w-screen flex flex-col justify-center items-center md:grid md:grid-cols-2 font-oxygen text-white"
+            className=" min-h-screen w-screen flex flex-col justify-center items-center md:grid md:grid-cols-2 font-oxygen text-white"
             id="about-me"
         >
             <div className="w-full p-8 px-16 items-center justify-center space-y-12 text-center">
