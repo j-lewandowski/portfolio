@@ -1,6 +1,6 @@
 import Logo from "../../img/Logo.svg";
 
-import { useActionData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
     const navigate = useNavigate();

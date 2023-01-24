@@ -1,4 +1,3 @@
-import { startTransition } from "react";
 import TechItem from "./TechItem";
 
 function AboutMe() {

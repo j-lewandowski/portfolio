@@ -10,7 +10,9 @@ function ProjectPage({ projects }) {
     const { id } = useParams();
     const navigate = useNavigate();
 
-    const data = projects.filter((project) => project.id == id)[0];
+    const data = projects.filter(
+        (project) => parseInt(project.id) === parseInt(id)
+    )[0];
 
     return (
         <div className="h-screen w-screen flex items-center">
@@ -26,8 +28,8 @@ function ProjectPage({ projects }) {
                 <div className="bg-[#16191c] p-8 rounded-xl min-h-screen w-full flex flex-col items-center space-y-4 md:space-y-12">
                     <div className="h-[90%] w-[90%]">
                         <Carousel>
-                            <img src={Prestika} />
-                            <img src={Prestika} />
+                            <img src={Prestika} alt="image1" />
+                            <img src={Prestika} alt="image2" />
                         </Carousel>
                     </div>
                     <div className="flex flex-col md:grid md:grid-cols-2 text-white w-full space-y-4 md:space-y-0">
