@@ -14,7 +14,7 @@ function ProjectPage({ projects }) {
 
     return (
         <div className="h-screen w-screen flex items-center">
-            <div className="md:px-72 pb-8 pt-32 flex flex-col items-center h-full space-y-4 ">
+            <div className="p-4 md:px-72 pb-8 pt-32 flex flex-col items-center h-full space-y-4 ">
                 <div className="w-full float-left">
                     <button
                         className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"
@@ -23,22 +23,22 @@ function ProjectPage({ projects }) {
                         Cofnij
                     </button>
                 </div>
-                <div className="bg-[#16191c] p-8 rounded-xl h-screen w-full flex flex-col items-center space-y-12">
-                    <div className="h-[800px] w-[80%]">
+                <div className="bg-[#16191c] p-8 rounded-xl min-h-screen w-full flex flex-col items-center space-y-4 md:space-y-12">
+                    <div className="h-[90%] w-[90%]">
                         <Carousel>
                             <img src={Prestika} />
                             <img src={Prestika} />
                         </Carousel>
                     </div>
-                    <div className="grid grid-cols-2 text-white w-full">
-                        <span className="font-oxygen text-xl text-center">
+                    <div className="flex flex-col md:grid md:grid-cols-2 text-white w-full space-y-4 md:space-y-0">
+                        <span className="font-oxygen text-2xl text-center">
                             {data.name}
                         </span>
-                        <div className="flex text-center items-center">
-                            <span className="text-white font-IBM text-sm mr-4">
+                        <div className="flex md:flex-row flex-col text-center space-y-1 md:space-y-0 md:items-center items-start">
+                            <span className="text-white font-IBM text-sm md:text-sm mr-4">
                                 Technologie:
                             </span>
-                            <div className="flex bottom-1 w-full space-x-4 items-center text-gray-400 font-IBM text-sm">
+                            <div className="flex md:flex-row flex-col bottom-1 w-full space-y-1 md:space-x-4 md:space-y-0 items-start md:items-center text-gray-400 font-IBM text-xs md:text-sm">
                                 {data.stack.map((item, i) => {
                                     return <p key={i}>{item},</p>;
                                 })}
@@ -46,11 +46,11 @@ function ProjectPage({ projects }) {
                         </div>
                     </div>
                     <div className="h-1 bg-white w-[90%] rounded-lg"></div>
-                    <div className="flex flex-col float-left w-full text-white space-y-4 px-64">
+                    <div className="flex flex-col float-left w-full text-white space-y-4 md:px-64">
                         <span className="font-IBM text-2xl text-accent">
                             Opis
                         </span>
-                        <main className="font-oxygen text-xl">
+                        <main className="font-oxygen md:text-xl">
                             Jest to landing page sklepu z zabudowami
                             przysznicowymi stworzona w pełni przeze mnie na
                             zamówienie. Strona połączona jest z systemem CMS
