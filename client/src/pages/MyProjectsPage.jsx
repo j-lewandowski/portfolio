@@ -7,8 +7,8 @@ function MyProjectsPage({ projects }) {
     const navigate = useNavigate();
 
     return (
-        <div className="h-screen">
-            <div className=" p-4 md:p-16 pt-32 flex flex-col items-center h-full">
+        <div className="min-h-screen">
+            <div className=" p-4 md:p-16 mt-24 flex flex-col items-center h-full">
                 <div className="w-full float-left">
                     <button
                         className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"
@@ -17,7 +17,10 @@ function MyProjectsPage({ projects }) {
                         Cofnij
                     </button>
                 </div>
-                <label className="text-white text-3xl font-oxygen">
+                <label
+                    className="text-white text-3xl font-oxygen"
+                    data-aos="fade-down"
+                >
                     Wszystkie moje projekty
                 </label>
                 <div className="flex flex-col p-4 md:grid md:grid-cols-3 gap-8 mt-16">

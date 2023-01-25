@@ -45,9 +45,12 @@ function AboutMe() {
             className=" min-h-screen w-screen flex flex-col justify-center items-center md:grid md:grid-cols-2 font-oxygen text-white"
             id="about-me"
         >
-            <div className="w-full p-8 px-16 items-center justify-center space-y-12 text-center">
+            <div
+                className="w-full p-8 px-16 items-center justify-center space-y-12 text-center"
+                data-aos="fade-right"
+            >
                 <p className="text-xl md:text-2xl font-bold">O mnie</p>
-                <p className=" md:text-xl text-justify">
+                <p className=" md:text-xl text-justify md:px-16">
                     Cześć! Nazywam się Jakub Lewandowski i jestem studentem II
                     roku informatyki na{" "}
                     <a
@@ -64,7 +67,12 @@ function AboutMe() {
                 </p>
             </div>
             <div className="w-full p-4 md:pd-0">
-                <p className="text-2xl font-bold font-IBM">Technologie</p>
+                <p
+                    className="text-2xl font-bold font-IBM"
+                    data-aos="fade-right"
+                >
+                    Technologie
+                </p>
                 <div className="w-full flex items-center justify-center">
                     <div className="grid grid-cols-3 grid-rows-3 gap-4 h-auto py-4 w-fit">
                         {technologies.map((technology, i) => {
@@ -73,6 +81,8 @@ function AboutMe() {
                                     <TechItem
                                         icon={technology.icon}
                                         name={technology.name}
+                                        key={i}
+                                        id={i}
                                     />
                                 </div>
                             );

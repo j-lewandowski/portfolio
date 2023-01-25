@@ -1,9 +1,12 @@
 import Prestika from "../../..//img/prestika.png";
 
-function ProjectItem({ name, desc, stack, img }) {
+function ProjectItem({ name, desc, stack, img, id }) {
     return (
         <div className="flex items-center justify-around flex-col relative  md:-translate-x-[10%]">
-            <div className="h-80 md:w-96 md:h-64 bg-[#16191c] relative -z-10 rounded-md md:rounded-none">
+            <div
+                className="h-80 md:w-96 md:h-64 bg-[#16191c] relative -z-10 rounded-md md:rounded-none"
+                data-aos={`fade-${id % 2 == 0 ? "right" : "left"}`}
+            >
                 <div className="p-4 md:pr-32 space-y-4">
                     <p className="font-IBM">{name}</p>
                     <p>{desc}</p>

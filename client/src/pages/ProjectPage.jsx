@@ -15,8 +15,8 @@ function ProjectPage({ projects }) {
     )[0];
 
     return (
-        <div className="h-screen w-screen flex items-center">
-            <div className="p-4 md:px-72 pb-8 pt-32 flex flex-col items-center h-full space-y-4 ">
+        <div className="min-h-screen w-screen flex items-center">
+            <div className="p-4 md:px-72 pb-16 pt-32 flex flex-col items-center h-full space-y-4 ">
                 <div className="w-full float-left">
                     <button
                         className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"
