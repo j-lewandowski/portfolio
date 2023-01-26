@@ -15,7 +15,7 @@ function ProjectItem({ name, desc, stack, img, id }) {
                         <p>{desc}</p>
                     </div>
                     <img
-                        src={Prestika}
+                        src={img}
                         className="p-4 block md:hidden"
                         alt={`ProjectPhoto${id}`}
                     />

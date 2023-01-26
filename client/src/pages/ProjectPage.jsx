@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { Carousel } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
 
+import { FaGithub, FaLink } from "react-icons/fa";
+
 function ProjectPage({ projects }) {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -48,17 +50,27 @@ function ProjectPage({ projects }) {
                     </div>
                     <div className="h-1 bg-white w-[90%] rounded-lg"></div>
                     <div className="flex flex-col float-left w-full text-white space-y-4 md:px-64">
-                        <span className="font-IBM text-2xl text-accent">
-                            Opis
-                        </span>
+                        <div className="flex justify-between">
+                            <span className="font-IBM text-2xl text-accent">
+                                Opis
+                            </span>
+                            <div className="flex space-x-2">
+                                {data.github !== "" && (
+                                    <a href={data.github}>
+                                        <FaGithub className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
+                                    </a>
+                                )}
+
+                                {data.link !== "" && (
+                                    <a href={data.link}>
+                                        <FaLink className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+
                         <main className="font-oxygen md:text-xl">
-                            Jest to landing page sklepu z zabudowami
-                            przysznicowymi stworzona w pełni przeze mnie na
-                            zamówienie. Strona połączona jest z systemem CMS
-                            Sanity, który powzwala na zarządzanie tekstem i
-                            zdjęciami, które znajduje się na stronie oraz
-                            rozbudowana o możliwość dodania nowych produktów w
-                            przyszłości.
+                            {data.descLong}
                         </main>
                     </div>
                 </div>

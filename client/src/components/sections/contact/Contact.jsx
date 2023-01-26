@@ -91,7 +91,7 @@ function Contact() {
                     </button>
                 </div>
             </form>
-            <div className="absolute bottom-2 text-sm text-gray-400 font-IBM w-full flex flex-col items-center justify-center space-y-2">
+            <div className="absolute bottom-0 text-sm text-gray-400 font-IBM w-full flex flex-col items-center justify-center space-y-2 p-4 bg-[#16191c]">
                 <div className="flex space-x-6">
                     <a href="https://github.com/j-lewandowski">
                         <FaGithub className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
