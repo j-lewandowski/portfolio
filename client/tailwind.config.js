@@ -14,6 +14,7 @@ module.exports = {
             },
             backgroundImage: {
                 prestika: 'url("/src/img/prestika.png")',
+                supportdesk: 'url("/src/img/supportdesk.png")',
             },
         },
     },

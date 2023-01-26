@@ -7,8 +7,6 @@ import ProjectPage from "./pages/ProjectPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { slide as Menu } from "react-burger-menu";
-
 function App() {
     const projects = [
         {

@@ -4,8 +4,6 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-    const [formIsOpen, setFormIsOpen] = useState(false);
-    const [calculatorIsOpen, setCalculatorIsOpen] = useState(false);
     const [formData, setFormData] = useState({
         email: "",
         message: "",
@@ -45,23 +43,12 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                "service_sfitj1s",
-                "template_x93mjhe",
-                form.current,
-                "2ZiGFe_otApRoDm81"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    alert("Message sent sucessfully!");
-                },
-                (error) => {
-                    console.log(error.text);
-                    alert("Failed to send message");
-                }
-            );
+        emailjs.sendForm(
+            "service_sfitj1s",
+            "template_x93mjhe",
+            form.current,
+            "2ZiGFe_otApRoDm81"
+        );
     };
 
     return (
@@ -76,9 +63,7 @@ function Contact() {
                 Napisz do mnie
             </p>
             <form
-                className={`flex flex-col gap-4 w-full items-center font-IBM transition-all duration-150 px-6 h-${
-                    formIsOpen ? "full" : "0"
-                }}`}
+                className={`flex flex-col gap-4 w-full items-center font-IBM transition-all duration-150 px-6 h-full}`}
                 onSubmit={onSubmit}
                 data-aos="fade-up"
                 ref={form}

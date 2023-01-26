@@ -25,7 +25,13 @@ function MyProjectsPage({ projects }) {
                 </label>
                 <div className="flex flex-col p-4 md:grid md:grid-cols-3 gap-8 mt-16">
                     {projects.map((project, i) => {
-                        return <ProjectItem stack={project.stack} id={i + 1} />;
+                        return (
+                            <ProjectItem
+                                name={project.name}
+                                stack={project.stack}
+                                id={i + 1}
+                            />
+                        );
                     })}
                 </div>
             </div>

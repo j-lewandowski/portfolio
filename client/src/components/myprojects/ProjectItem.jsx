@@ -3,7 +3,7 @@ import Prestika from "../../img/prestika.png";
 
 import { Link } from "react-router-dom";
 
-function ProjectItem({ stack, id }) {
+function ProjectItem({ stack, name, id }) {
     return (
         <Link to={`/my-projects/${id}`}>
             <div
@@ -14,7 +14,7 @@ function ProjectItem({ stack, id }) {
             >
                 <img src={Prestika} alt="" />
                 <label className="text-white w-full text-center text-xl hover:cursor-pointer">
-                    Prestika
+                    {name}
                 </label>
                 <div className="flex space-x-2 bottom-1 w-full justify-around text-gray-400 font-IBM text-sm">
                     {stack.map((item, i) => {
