@@ -37,7 +37,7 @@ function App() {
             github: "https://github.com/j-lewandowski/support-desk-app",
             link: "",
         },
-    ];
+    ]; // Docelowo cała ta lista z danymi będzie szła z backendu
 
     return (
         <BrowserRouter>
