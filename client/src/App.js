@@ -33,7 +33,7 @@ function App() {
             stack: ["React", "Bootstrap", "Firebase"],
             imgs: [SupportDesk, SupportDesk2],
             descLong:
-                "Aplikacja powstała podczas mojej nauki Reacta oraz Node.js z kursu Brad'a Traversy na platformie Udemy. Całość ostylowana została przy pomocy Bootstrapa, a za backend odpowiedzialny jest stworzony przeze mnie server express.js",
+                "Aplikacja powstała podczas mojej nauki Reacta oraz Node.js z kursu Brad'a Traversy na platformie Udemy. Całość ostylowana została przy pomocy Bootstrapa, a za backend odpowiedzialny jest stworzony przeze mnie server express.js.",
             github: "https://github.com/j-lewandowski/support-desk-app",
             link: "",
         },
