@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Calculator from "./Calculator";
-import { Location } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
     const [formIsOpen, setFormIsOpen] = useState(false);
@@ -23,6 +23,7 @@ function Contact() {
                 position: toast.POSITION.BOTTOM_RIGHT,
             });
         } else {
+            sendEmail(e);
             toast.success("Wiadomość wysłana!", {
                 position: toast.POSITION.BOTTOM_RIGHT,
             });
@@ -31,11 +32,36 @@ function Contact() {
                 message: "",
             });
         }
+        return false;
     };
 
     const onChange = (e) => {
         e.preventDefault();
         setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_sfitj1s",
+                "template_x93mjhe",
+                form.current,
+                "2ZiGFe_otApRoDm81"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("Message sent sucessfully!");
+                },
+                (error) => {
+                    console.log(error.text);
+                    alert("Failed to send message");
+                }
+            );
     };
 
     return (
@@ -55,6 +81,7 @@ function Contact() {
                 }}`}
                 onSubmit={onSubmit}
                 data-aos="fade-up"
+                ref={form}
             >
                 <input
                     className="w-full md:w-[50%] bg-[#16191c] p-4 rounded-md focus:border-accent border-2 border-solid"

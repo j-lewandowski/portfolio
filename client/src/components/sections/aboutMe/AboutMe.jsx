@@ -67,21 +67,18 @@ function AboutMe() {
                 </p>
             </div>
             <div className="w-full p-4 md:pd-0">
-                <p
-                    className="text-2xl font-bold font-IBM"
-                    data-aos="fade-right"
-                >
-                    Technologie
-                </p>
+                <p className="text-2xl font-bold font-IBM">Technologie</p>
                 <div className="w-full flex items-center justify-center">
                     <div className="grid grid-cols-3 grid-rows-3 gap-4 h-auto py-4 w-fit">
                         {technologies.map((technology, i) => {
                             return (
-                                <div className="flex items-center justify-center">
+                                <div
+                                    className="flex items-center justify-center"
+                                    key={i}
+                                >
                                     <TechItem
                                         icon={technology.icon}
                                         name={technology.name}
-                                        key={i}
                                         id={i}
                                     />
                                 </div>

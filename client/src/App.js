@@ -33,7 +33,7 @@ function App() {
 
     return (
         <BrowserRouter>
-            <div className="flex flex-col h-screen w-screen">
+            <div>
                 <Navbar />
                 <ToastContainer />
                 <Routes>

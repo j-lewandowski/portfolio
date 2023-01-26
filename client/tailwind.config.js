@@ -9,6 +9,7 @@ module.exports = {
             },
             colors: {
                 primary: "#272B31",
+                secondary: "#16191c",
                 accent: "#5CF486",
             },
             backgroundImage: {

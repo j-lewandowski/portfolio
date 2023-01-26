@@ -5,7 +5,6 @@ function TechItem({ icon, name, id }) {
         <div
             className="w-32 h-32 bg-[#16191c] flex flex-col justify-around items-center rounded-lg group transition-all duration-150 ease-in-out"
             data-aos="flip-up"
-            data-aos-delay={` ${50 * (id % 3)}`}
             data-aos-offset={` ${50 * (id % 3)}`}
         >
             <img

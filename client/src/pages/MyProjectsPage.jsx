@@ -7,8 +7,8 @@ function MyProjectsPage({ projects }) {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen">
-            <div className=" p-4 md:p-16 mt-24 flex flex-col items-center h-full">
+        <div className="min-h-screen pt-24">
+            <div className=" p-4 md:p-16 flex flex-col items-center h-full space-y-4 md:space-y-0">
                 <div className="w-full float-left">
                     <button
                         className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"

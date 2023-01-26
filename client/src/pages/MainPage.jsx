@@ -1,6 +1,7 @@
 import AboutMe from "../components/sections/aboutMe/AboutMe";
 import Main from "../components/sections/main/Main";
 import MyProjects from "../components/sections/myProjects/MyProjects";
+import Calculator from "../components/calculator/Calculator";
 import Contact from "../components/sections/contact/Contact";
 
 function MainPage({ projects }) {
@@ -9,6 +10,7 @@ function MainPage({ projects }) {
             <Main />
             <AboutMe />
             <MyProjects id="my-projects" projects={projects} />
+            <Calculator />
             <Contact id="contact" />
         </div>
     );

@@ -16,7 +16,7 @@ function ProjectPage({ projects }) {
 
     return (
         <div className="min-h-screen w-screen flex items-center">
-            <div className="p-4 md:px-72 pb-16 pt-32 flex flex-col items-center h-full space-y-4 ">
+            <div className="p-4 md:px-72 pb-16 pt-32 flex flex-col items-center h-full w-full space-y-4 ">
                 <div className="w-full float-left">
                     <button
                         className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"
@@ -25,8 +25,8 @@ function ProjectPage({ projects }) {
                         Cofnij
                     </button>
                 </div>
-                <div className="bg-[#16191c] p-8 rounded-xl min-h-screen w-full flex flex-col items-center space-y-4 md:space-y-12">
-                    <div className="h-[90%] w-[90%]">
+                <div className="bg-[#16191c] p-8 rounded-xl min-h-screen h-full w-full flex flex-col items-center space-y-6 md:space-y-12">
+                    <div className="h-[300px] w-[320px] md:h-[700px] md:w-[900px]">
                         <Carousel>
                             <img src={Prestika} alt="image1" />
                             <img src={Prestika} alt="image2" />

@@ -6,7 +6,7 @@ function MyProjects({ projects }) {
 
     return (
         <div
-            className="min-h-screen w-full flex flex-col space-y-8 justify-around items-center text-white font-oxygen"
+            className="md:pt-36 min-h-screen w-full flex flex-col space-y-4 justify-around items-center text-white font-oxygen"
             id="my-projects"
         >
             <p

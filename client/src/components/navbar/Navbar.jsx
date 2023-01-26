@@ -12,11 +12,11 @@ function Navbar() {
 
     return (
         <nav
-            className="w-full fixed bg-primary z-10 shadow-lg"
+            className="w-full fixed bg-primary z-10 shadow-lg flex"
             data-aos="fade-down"
         >
             <div className="w-full flex justify-between items-center px-8 pt-4 pb-3 text-white font-oxygen duration-150">
-                <a href="#hero" data-aos="fade-down">
+                <a href="#hero" data-aos="fade-down" data-aos-delay="50">
                     <img
                         src={Logo}
                         alt="Logo"
@@ -25,12 +25,22 @@ function Navbar() {
                     />
                 </a>
                 <ul className="hidden md:flex items-start gap-8">
-                    <a href="#hero" onClick={onClick} data-aos="fade-down">
+                    <a
+                        href="#hero"
+                        onClick={onClick}
+                        data-aos="fade-down"
+                        data-aos-delay="50"
+                    >
                         <li className="hover:text-accent hover:cursor-pointer">
                             Strona główna
                         </li>
                     </a>
-                    <a href="#about-me" onClick={onClick} data-aos="fade-down">
+                    <a
+                        href="#about-me"
+                        onClick={onClick}
+                        data-aos="fade-down"
+                        data-aos-delay="50"
+                    >
                         <li className="hover:text-accent hover:cursor-pointer">
                             O mnie
                         </li>
@@ -39,12 +49,28 @@ function Navbar() {
                         href="#my-projects"
                         onClick={onClick}
                         data-aos="fade-down"
+                        data-aos-delay="50"
                     >
                         <li className="hover:text-accent hover:cursor-pointer">
                             Moje projekty
                         </li>
                     </a>
-                    <a href="#contact" onClick={onClick} data-aos="fade-down">
+                    <a
+                        href="#calculator"
+                        onClick={onClick}
+                        data-aos="fade-down"
+                        data-aos-delay="50"
+                    >
+                        <li className="hover:text-accent hover:cursor-pointer">
+                            Kalkulator
+                        </li>
+                    </a>
+                    <a
+                        href="#contact"
+                        onClick={onClick}
+                        data-aos="fade-down"
+                        data-aos-delay="50"
+                    >
                         <li className="hover:text-accent hover:cursor-pointer">
                             Kontakt
                         </li>
@@ -70,6 +96,16 @@ function Navbar() {
                     >
                         <li className="hover:text-accent hover:cursor-pointer">
                             Moje projekty
+                        </li>
+                    </a>
+                    <a
+                        href="#calculator"
+                        onClick={onClick}
+                        data-aos="fade-down"
+                        data-aos-delay="50"
+                    >
+                        <li className="hover:text-accent hover:cursor-pointer">
+                            Kalkulator
                         </li>
                     </a>
                     <a href="#contact" onClick={onClick} data-aos="fade-down">
