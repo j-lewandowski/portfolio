@@ -49,7 +49,8 @@ function Contact() {
             "service_sfitj1s",
             "template_x93mjhe",
             form.current,
-            "2ZiGFe_otApRoDm81"
+            "2ZiGFe_otApRoDm81",
+            { email: formData.email }
         );
     };
 
