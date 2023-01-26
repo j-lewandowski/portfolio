@@ -24,10 +24,9 @@ function ProjectItem({ name, desc, stack, img, id }) {
                             return <p key={i}>{item}</p>;
                         })}
                     </div>
-                    <div
-                        className={`hidden md:block w-96 h-64 absolute z-10 ${
-                            id === 0 ? "bg-prestika" : "bg-supportdesk"
-                        } -top-28 left-48 bg-no-repeat bg-cover bg-center outline-2 outline-accent`}
+                    <img
+                        src={img}
+                        className={`hidden md:block w-96 h-64 absolute z-10  -top-28 left-48 bg-no-repeat bg-cover bg-center outline-2 outline-accent`}
                     />
                 </div>
             </div>

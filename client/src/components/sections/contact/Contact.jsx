@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+
 function Contact() {
     const [formData, setFormData] = useState({
         email: "",
@@ -83,11 +85,24 @@ function Contact() {
                     onChange={onChange}
                     name="message"
                 />
-                <button className="p-4 bg-secondary rounded-md font-IBM hover:text-accent mt-4">
-                    Wyślij
-                </button>
+                <div className="hover:scale-110 duration-150">
+                    <button className="p-4 bg-secondary rounded-md font-IBM hover:text-accent mt-4">
+                        Wyślij
+                    </button>
+                </div>
             </form>
-            <div className="absolute bottom-2 text-sm text-gray-400 font-IBM">
+            <div className="absolute bottom-2 text-sm text-gray-400 font-IBM w-full flex flex-col items-center justify-center space-y-2">
+                <div className="flex space-x-6">
+                    <a href="https://github.com/j-lewandowski">
+                        <FaGithub className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
+                    </a>
+                    <a href="https://linkedin.com/in/jk-lewandowski">
+                        <FaLinkedin className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <FaInstagram className="text-2xl hover:text-accent duration-150 hover:-translate-y-2" />
+                    </a>
+                </div>
                 <p>Designed & created by Jakub Lewandowski</p>
             </div>
         </div>

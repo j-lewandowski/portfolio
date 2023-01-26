@@ -24,18 +24,21 @@ function MyProjects({ projects }) {
                             desc={project.desc}
                             stack={project.stack}
                             id={i}
+                            img={project.imgs[0]}
                         />
                     );
                 })}
             </div>
 
-            <button
-                className="p-4 bg-secondary rounded-md font-IBM hover:text-accent"
-                onClick={() => navigate("/my-projects")}
-                data-aos="fade-up"
-            >
-                Więcej projektów
-            </button>
+            <div className="hover:scale-110 duration-150">
+                <button
+                    className="p-4 bg-secondary rounded-md font-IBM hover:text-accent "
+                    onClick={() => navigate("/my-projects")}
+                    data-aos="fade-up"
+                >
+                    Więcej projektów
+                </button>
+            </div>
         </div>
     );
 }

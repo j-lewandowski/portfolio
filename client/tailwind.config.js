@@ -13,8 +13,8 @@ module.exports = {
                 accent: "#5CF486",
             },
             backgroundImage: {
-                prestika: 'url("./src/img/prestika.png")',
-                supportdesk: 'url("./src/img/supportdesk.png")',
+                prestika: 'url("/src/img/prestika.png")',
+                supportdesk: 'url("/src/img/supportdesk.png")',
             },
         },
     },

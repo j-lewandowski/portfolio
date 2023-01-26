@@ -11,7 +11,7 @@ function MyProjectsPage({ projects }) {
             <div className=" p-4 md:p-16 flex flex-col items-center h-full space-y-4 md:space-y-0">
                 <div className="w-full float-left">
                     <button
-                        className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4 text-white"
+                        className="p-4 bg-secondary rounded-md font-IBM hover:text-accent mt-4 text-white"
                         onClick={() => navigate("/")}
                     >
                         Cofnij
