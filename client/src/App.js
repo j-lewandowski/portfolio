@@ -7,6 +7,10 @@ import ProjectPage from "./pages/ProjectPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import Prestika from "../src/img/prestika.png";
+import SupportDesk from "../src/img/supportdesk.png";
+import SupportDesk2 from "../src/img/supportdesk2.png";
+
 function App() {
     const projects = [
         {
@@ -14,14 +18,14 @@ function App() {
             name: "Prestika",
             desc: "Strona internetowa na zamówienie",
             stack: ["React", "Tailwind CSS", "Sanity CMS"],
-            img: "../../../img/prestika.png",
+            imgs: [Prestika],
         },
         {
             id: 2,
             name: "Helpdesk app",
             desc: "Aplikacja helpdesk",
             stack: ["React", "Bootstrap", "Firebase"],
-            img: "../../../img/prestika.png",
+            imgs: [SupportDesk, SupportDesk2],
         },
         // {
         //     name: "House marketplace app",

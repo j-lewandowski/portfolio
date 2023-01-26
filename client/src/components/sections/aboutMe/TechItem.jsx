@@ -3,7 +3,7 @@ import React from "react";
 function TechItem({ icon, name, id }) {
     return (
         <div
-            className="w-32 h-32 bg-[#16191c] flex flex-col justify-around items-center rounded-lg group transition-all duration-150 ease-in-out"
+            className="w-32 h-32 bg-secondary flex flex-col justify-around items-center rounded-lg group transition-all duration-150 ease-in-out"
             data-aos="flip-up"
             data-aos-offset={` ${50 * (id % 3)}`}
         >

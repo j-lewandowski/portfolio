@@ -69,7 +69,7 @@ function Contact() {
                 ref={form}
             >
                 <input
-                    className="w-full md:w-[50%] bg-[#16191c] p-4 rounded-md focus:border-accent border-2 border-solid"
+                    className="w-full md:w-[50%] bg-secondary p-4 rounded-md focus:border-accent border-2 border-solid"
                     type="email"
                     placeholder="Email"
                     value={formData.email}
@@ -77,13 +77,13 @@ function Contact() {
                     onChange={onChange}
                 />
                 <textarea
-                    className="w-full md:w-[50%] bg-[#16191c] p-4 rounded-md focus:border-accent border-2 border-solid"
+                    className="w-full md:w-[50%] bg-secondary p-4 rounded-md focus:border-accent border-2 border-solid"
                     placeholder="Treść"
                     value={formData.message}
                     onChange={onChange}
                     name="message"
                 />
-                <button className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent mt-4">
+                <button className="p-4 bg-secondary rounded-md font-IBM hover:text-accent mt-4">
                     Wyślij
                 </button>
             </form>

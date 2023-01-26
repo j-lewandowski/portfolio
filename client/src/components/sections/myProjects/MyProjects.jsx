@@ -23,7 +23,6 @@ function MyProjects({ projects }) {
                             name={project.name}
                             desc={project.desc}
                             stack={project.stack}
-                            img={project.img}
                             id={i}
                         />
                     );
@@ -31,7 +30,7 @@ function MyProjects({ projects }) {
             </div>
 
             <button
-                className="p-4 bg-[#16191c] rounded-md font-IBM hover:text-accent"
+                className="p-4 bg-secondary rounded-md font-IBM hover:text-accent"
                 onClick={() => navigate("/my-projects")}
                 data-aos="fade-up"
             >

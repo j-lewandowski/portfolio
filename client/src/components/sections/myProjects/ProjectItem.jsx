@@ -7,7 +7,7 @@ function ProjectItem({ name, desc, stack, img, id }) {
         <Link to={`/my-projects/${id + 1}`}>
             <div className="flex items-center justify-around flex-col relative  md:-translate-x-[10%] hover:cursor-pointer">
                 <div
-                    className="h-80 md:w-96 md:h-64 bg-[#16191c] relative -z-10 rounded-md md:rounded-none"
+                    className="h-80 md:w-96 md:h-64 bg-secondary relative -z-10 rounded-md md:rounded-none"
                     data-aos={`fade-${id % 2 === 0 ? "right" : "left"}`}
                 >
                     <div className="p-4 md:pr-32 space-y-4">
@@ -25,8 +25,8 @@ function ProjectItem({ name, desc, stack, img, id }) {
                         })}
                     </div>
                     <div
-                        className={`hidden md:block w-96 h-64 absolute z-10 bg-${
-                            id === 0 ? "prestika" : "supportdesk"
+                        className={`hidden md:block w-96 h-64 absolute z-10 ${
+                            id === 0 ? "bg-prestika" : "bg-supportdesk"
                         } -top-28 left-48 bg-no-repeat bg-cover bg-center outline-2 outline-accent`}
                     />
                 </div>

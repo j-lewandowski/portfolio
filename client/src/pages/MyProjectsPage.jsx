@@ -30,6 +30,7 @@ function MyProjectsPage({ projects }) {
                                 name={project.name}
                                 stack={project.stack}
                                 id={i + 1}
+                                img={project.imgs[0]}
                             />
                         );
                     })}
